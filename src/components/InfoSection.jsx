@@ -18,11 +18,7 @@ const InfoSection = () => {
       title: '100% Money Back',
       description: 'Full refund if you are not satisfied',
     },
-    {
-      icon: <FaShippingFast className="text-3xl text-amber-600" />,
-      title: 'Free Shipping',
-      description: 'get your orders delivered with no extra cost',
-    },
+
     {
       icon: <FaLock className="text-3xl text-amber-600" />,
       title: 'Payment Secure',
@@ -44,8 +40,8 @@ const InfoSection = () => {
             className="flex flex-col items-center text-center p-4 border rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 cursor-pointer"
           >
             {item.icon}
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
+            <p className="mt-2 text-gray-500">{item.description}</p>
           </div>
         ))}
       </div>
