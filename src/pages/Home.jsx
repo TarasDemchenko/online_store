@@ -38,7 +38,7 @@ const Home = () => {
               <p>Your | Choice</p>
               <h2 className="text-3xl font-bold">Welcome to t-Shop</h2>
               <p className="text-xl mt-2.5 font-bold ">Best quality</p>
-              <button className="bg-amber-600 px-8 py-1.5 mt-4 hover:bg-amber-700 transform transition-transform duration-300 hover:scale-105 rounded-md">
+              <button className="bg-amber-600 px-8 py-1.5 mt-4 hover:bg-amber-700 transform transition-transform duration-300 hover:scale-105 rounded-md" onClick={()=>navigate('/shop')}>
                 Shop now
               </button>
             </div>
