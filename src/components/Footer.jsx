@@ -65,7 +65,7 @@ const Footer = () => {
               placeholder="Enter email"
               className="w-full p-2 rounded-l-lg bg-amber-100 border border-amber-600"
             />
-            <button className="bg-amber-500 text-white px-4 py-2 rounded-r-lg border border-amber-600 ">
+            <button className="bg-amber-600 text-white px-4 py-2 rounded-r-lg border border-amber-700 hover:bg-amber-800">
               Subscribe
             </button>
           </form>
@@ -77,7 +77,7 @@ const Footer = () => {
 
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a className="hover:underline decoration-amber-200 cursor-pointer">
-              Privecy Policy{' '}
+              Privecy Policy
             </a>
             <a className="hover:underline decoration-amber-200 cursor-pointer">
               Terms & Conditions
