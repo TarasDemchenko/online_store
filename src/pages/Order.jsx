@@ -9,15 +9,15 @@ const Order = ({ order }) => {
       <div>
         <h3>Order summery</h3>
         <p>Order number: {order.orderNumber}</p>
-        {/* <div>
+        <div>
           <h2>Shipping information</h2>
           <p>{order.shippingInformation.address}</p>
           <p>{order.shippingInformation.city}</p>
           <p>{order.shippingInformation.zip}</p>
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <h3>Products ordered</h3>
-          {order.map(pro => (
+          {order.products.map(pro => (
             <div key={pro.id}>
               <p>
                 {pro.name} x {pro.quantity}
@@ -25,15 +25,15 @@ const Order = ({ order }) => {
               <p>{pro.price * pro.quantity} $</p>
             </div>
           ))}
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <span>Total price:</span>
           <span>{order.totalPrice}</span>
         </div>
         <div>
           <button>Order tracking</button>
           <button>Continue shopping</button>
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const Checkout = ({ setOrder }) => {
 
   const handleOrder = () => {
     const newOrder = {
-      products: cart.products,
+      products: cart,
       orderNumber: '1234',
       shippingInformation: shippingInfo,
       totalPrice: total,
@@ -148,7 +148,7 @@ const Checkout = ({ setOrder }) => {
                     onChange={e =>
                       setShippingInfo({
                         ...shippingInfo,
-                        address: e.zip.value,
+                        zip: e.target.value,
                       })
                     }
                   />
