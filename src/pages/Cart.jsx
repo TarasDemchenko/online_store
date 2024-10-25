@@ -12,6 +12,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 import { useState } from 'react';
 import Modal from '../components/Modal';
 import ChangeAddress from '../components/ChangeAddress';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const cart = useSelector(selectCart);
@@ -20,7 +21,7 @@ const Cart = () => {
   const [address, setAddress] = useState('main stret, 0012');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="conteiner mx-auto py-8 min-h-96 px-4 md:px-16 lg:px-24">
@@ -107,7 +108,10 @@ const Cart = () => {
                 <span>Total price:</span>
                 <span>{total.toFixed(2)} $</span>
               </div>
-              <button className="w-full bg-amber-600 text-white py-2 hover:bg-amber-800 rounded-lg" onClick={()=>navigate('/checkout')}>
+              <button
+                className="w-full bg-amber-600 text-white py-2 hover:bg-amber-800 rounded-lg"
+                onClick={() => navigate('/checkout')}
+              >
                 Proced to checkout
               </button>
             </div>
