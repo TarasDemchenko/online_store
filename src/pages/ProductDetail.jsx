@@ -6,15 +6,15 @@ import { selectProducts } from '../redux/productSlice';
 const ProductDetail = () => {
   const { id } = useParams();
   const products = useSelector(selectProducts);
-  const [productId, setProduct] = useState();
+  const [product, setProduct] = useState();
 
   useEffect(() => {
-    const newProduct = products.find(pro => pro.id == id);
+    const newProduct = products.find(product => product.id == parseInt(id));
 
     setProduct(newProduct);
   }, [id, products]);
 
-  return <div>{productId}</div>;
+  return <div>{product.name}</div>;
 };
 
 export default ProductDetail;
