@@ -24,7 +24,7 @@ const productSlice = createSlice({
 
 export const { setProducts, setSearchTerm } = productSlice.actions;
 export const selectProducts = state => state.product.products;
-export const filterProducts = state => state.prodact.searchTerm;
+export const filterProducts = state => state.product.searchTerm;
 export const filterDataProducts = state => state.product.filterData;
 
 export default productSlice.reducer;
