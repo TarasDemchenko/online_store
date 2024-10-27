@@ -45,7 +45,10 @@ const Navbar = () => {
               className="w-full border py-2 px-4"
               onChange={e => setSearch(e.target.value)}
             />
-            <FaSearch className="absolute top-3 right-3 text-amber-500"></FaSearch>
+            <FaSearch
+              className="absolute top-3 right-3 text-amber-500"
+              onClick={handleSearch}
+            ></FaSearch>
           </form>
         </div>
         <div className="flex items-center space-x-4">
